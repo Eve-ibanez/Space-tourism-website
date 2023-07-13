@@ -1,0 +1,240 @@
+body{
+    background-image: url(./assets/technology/background-technology-mobile.jpg);
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-family: 'Barlow Condensed';
+    margin: 0;
+}
+
+.nav__div-logo > img {
+    width: 40px;
+    margin: 15px;
+}
+
+.nav-menu-img {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+.nav__div-menu__list > img {
+    position: relative;
+    top: -25px;
+    left: 200px;
+}
+
+.nav__div-menu {
+    position: absolute;
+    width: 254px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    height: 667px;
+    top: 0px;
+    left: 120px;
+    display: none ;
+}
+
+.nav__div-menu__list {
+    position: relative;
+    top: 50px;
+    color: white;
+    font-size: 1em;
+    font-family: 'Barlow Condensed';
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.nav__div-menu__list > ol {
+    margin-bottom: 40px;
+}
+
+span {
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.nav__div-menu__desktop{
+    display: none;
+}
+
+a:visited, a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.section {
+    text-align: center;
+}
+
+.section__h2 {
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.section__h2 > span {
+    color: #636262;
+    font-weight: 600;
+}
+
+.section__div-img{
+    width: 375px;
+}
+
+.img-mobile {
+    width: 100%;
+    height: 170px;
+    margin-left: 1px;
+}
+
+.img-desktop {
+    display: none;
+}
+
+.section__div-img__div-circles {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    margin: 30px 120px;
+    justify-content:space-between;
+}
+
+.circle-1, .circle-2, .circle-3 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #636262;
+    display: grid;
+    place-content: center;
+}
+
+.circle-2 {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.section__div-info {
+    box-sizing: border-box;
+}
+
+.section__div-info__h2 {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: .9em;
+    letter-spacing: 2px;
+    color: #D0D6F9;
+}
+
+.section__div-info__name {
+    font-family: 'Bellefair';
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.section__div-info__paragraph {
+    color: #D0D6F9;
+    font-size: .9em;
+    font-family: 'Barlow';
+    width: 310px;
+    margin-left: 35px;
+    line-height: 25px;
+}
+
+
+
+@media (min-width:1000px) {
+    body {
+        background-image: url(./assets/technology/background-technology-desktop.jpg);
+    }
+    .nav__div-logo > img {
+        margin: 50px;
+    }
+    .nav-menu-img {
+        display: none;
+    }
+    .nav__div-menu__desktop{
+        display: flex;
+        width: 830px;
+        height: 70px;
+        background-color: #9797975d;
+        position: relative;
+        top: -107px;
+        left: 44vw;
+        text-transform: uppercase;
+        font-family: 'Barlow';
+        box-sizing: border-box;
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+    a:hover {
+        text-decoration:underline;
+    }
+    .line {
+        width: 437px;
+        height: 1px;
+        background-color: #979797; 
+        position: absolute;
+        top: 8vh;
+        left: 16vw;
+    }
+    .section {
+        display: flex;
+        flex-direction: column;
+        text-align: start
+    }
+    .section__h2 {
+        margin-left: 220px;
+        font-size: 2em;
+    }
+    .section__div-img{
+        width: 515px;
+        height: 527px;
+        position: absolute;
+        bottom: 100px;
+        right: -15px;
+        object-fit: cover;
+    }
+    .img-mobile {
+        display: none;
+    }
+    .img-desktop {
+        display: block;
+    }
+    .section__div-img__div-circles {
+        position: absolute;
+        left: -58vw;
+        bottom: 90px;
+        flex-direction: column;
+
+    }
+    .circle-1, .circle-2, .circle-3 {
+        width: 80px;
+        height: 80px;
+        margin-top: 30px;
+        font-size: 1.5em;
+    }
+    .section__div-info {
+        position: relative;
+        top: 70px;
+        left: 340px;
+        width: 444px;
+    }
+    .section__div-info__h2 {
+        font-size: 1.1em;
+    }
+    .section__div-info__name {
+        font-size: 3.2em;
+    }
+    .section__div-info__paragraph {
+        margin: 0;
+        font-size: 1em;
+        width: 390px;
+    }
+    
+
+}

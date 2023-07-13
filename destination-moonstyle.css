@@ -1,0 +1,234 @@
+body{
+    background-image: url(./assets/destination/background-destination-mobile.jpg);
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-family: 'Bellefair', serif;
+}
+.nav__div-logo > img {
+    width: 40px;
+    margin: 15px;
+}
+
+.nav-menu-img {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+.nav__div-menu__list > img {
+    position: relative;
+    top: -25px;
+    left: 200px;
+}
+
+.nav__div-menu {
+    position: absolute;
+    width: 254px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    height: 667px;
+    top: 0px;
+    left: 120px;
+    display: none ;
+}
+
+.nav__div-menu__list {
+    position: relative;
+    top: 50px;
+    color: white;
+    font-size: 1em;
+    font-family: 'Barlow Condensed';
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.nav__div-menu__list > ol {
+    margin-bottom: 40px;
+}
+
+span {
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.nav__div-menu__desktop{
+    display: none;
+}
+
+a:visited, a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.section {
+    text-align: center;
+}
+
+.section__h2 {
+    font-family: 'Barlow condensed', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.section__h2 > span {
+    color: #636262;
+    font-weight: 600;
+}
+
+.section__div-moon {
+    width: 170px;
+    height: 170px;
+    background-image: url(./assets/destination/image-moon.png);
+    background-size: contain;
+    margin-left: 100px;
+}
+
+.section__div-list {
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed';
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    margin-top: 5px;
+    color: #D0D6F9;
+}
+
+.rectangle-title {
+    width: 36px;
+    height: 3px;
+    background-color: #ffffff;
+}
+
+.section__title {
+    text-transform: uppercase;
+    font-size: 3.5em;
+    font-weight: 300;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.section__paragraph {
+    box-sizing: border-box;
+    font-family: 'Barlow Condensed';
+    font-weight: 300;
+    width: 315px;
+    font-size: 1em;
+    color: #D0D6F9;
+    margin-left: 20px;
+    letter-spacing: 1px;
+}
+
+.rectangle{
+    width: 327px;
+    height: 1px;
+    background-color: #383B4B;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.section__div-info {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed';
+}
+
+.section__div-info__distance, .section__div-info__time {
+    font-weight: 300;
+    color: #D0D6F9;
+    margin: 10px;
+    font-size: .9em;
+}
+
+.section__div-info__distance__num, .section__div-info__time__num {
+    font-weight: 400;
+    font-size: 1.5em;
+    font-family: 'Bellefair' ;
+    margin-bottom: 15px;
+}
+
+@media (min-width:1000px) {
+    body {
+        background-image: url(./assets/destination/background-destination-desktop.jpg);
+    }
+    .nav__div-logo > img {
+        margin: 50px;
+    }
+    .nav-menu-img {
+        display: none;
+    }
+    .nav__div-menu__desktop{
+        display: flex;
+        width: 830px;
+        height: 70px;
+        background-color: #9797975d;
+        position: relative;
+        top: -100px;
+        left: 620px;
+        text-transform: uppercase;
+        font-family: 'Barlow';
+        box-sizing: border-box;
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+    a:hover {
+        text-decoration:underline;
+    }
+    .line {
+        width: 437px;
+        height: 1px;
+        background-color: #979797; 
+        position: absolute;
+        top: 90px;
+        left: 225px;
+    }
+    .section {
+        display: flex;
+        flex-direction: column;
+        text-align: start
+    }
+    .section__h2{
+        margin-left: 250px;
+        font-size: 1.5em;
+    }
+    .section__div-moon {
+        width: 445px;
+        height: 445px;
+        margin: 70px 250px;
+    }
+    .div-container-info {
+        position: absolute;
+        left: 800px;
+        top: 300px;
+        width: 415px;
+    }
+    .section__div-list {
+        position: relative;
+        left: -35px;
+    }
+    .section__title {
+        font-size: 6.5em;
+    }
+    .section__paragraph {
+        margin-left: 0;
+        font-size: 1.2em;
+        width: auto;
+    }
+    .rectangle{
+        width: 415px;
+        margin: 100px 0 10px;
+    }
+    .section__div-info__time, .section__div-info__time__num {
+        position: relative;
+        top: -80px;
+        left: 200px;
+    }
+    .section__div-info__distance, .section__div-info__time {
+        margin-left: 0;
+    }
+}

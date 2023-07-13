@@ -1,0 +1,228 @@
+body{
+    background-image: url(./assets/crew/background-crew-mobile.jpg);
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-family: 'Barlow Condensed';
+}
+
+.nav__div-logo > img {
+    width: 40px;
+    margin: 15px;
+}
+
+.nav-menu-img {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+.nav__div-menu__list > img {
+    position: relative;
+    top: -25px;
+    left: 200px;
+}
+
+.nav__div-menu {
+    position: absolute;
+    width: 254px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    height: 667px;
+    top: 0px;
+    left: 120px;
+    display: none ;
+}
+
+.nav__div-menu__list {
+    position: relative;
+    top: 50px;
+    color: white;
+    font-size: 1em;
+    font-family: 'Barlow Condensed';
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.nav__div-menu__list > ol {
+    margin-bottom: 40px;
+}
+
+span {
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.nav__div-menu__desktop{
+    display: none;
+}
+
+.section {
+    text-align: center;
+}
+
+.section__h2 {
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.section__h2 > span {
+    color: #636262;
+    font-weight: 600;
+}
+
+.section__div-img{
+    width: 327px;
+    height: 223px;
+}
+
+.section__div-img > img {
+    height: 223px;
+    margin: 20px 0 0 50px;
+}
+
+.img-1, .img-2, .img-4 {
+    display: none;
+}
+
+.rectangle {
+    height: 1px;
+    background-color: #636262;
+    margin-left: 20px;
+    position: relative;
+    top: -3px;
+}
+
+.section__div-img__div-circles {
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    width: 100px;
+    margin: 25px 130px;
+    justify-content:space-around;
+}
+
+.circle-1, .circle-2, .circle-3, .circle-4 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #636262;
+}
+
+.circle-3 {
+    background-color: #ffffff;
+}
+
+.section__div-info__h2 {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: .9em;
+    letter-spacing: 2px;
+    font-family: 'Bellefair';
+    opacity: .6;
+    margin-top: 80px;
+}
+
+.section__div-info__name {
+    font-family: 'Bellefair';
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.section__div-info__paragraph {
+    color: #D0D6F9;
+    font-size: .93em;
+    font-family: 'Barlow';
+    width: 327px;
+    margin-left: 20px;
+    line-height: 25px;
+}
+
+
+@media (min-width:1000px) {
+    body {
+        background-image: url(./assets/crew/background-crew-desktop.jpg);
+    }
+    .nav__div-logo > img {
+        margin: 50px;
+    }
+    .nav-menu-img {
+        display: none;
+    }
+    .nav__div-menu__desktop{
+        display: flex;
+        width: 830px;
+        height: 70px;
+        background-color: #9797975d;
+        position: relative;
+        top: -100px;
+        left: 44vw;
+        text-transform: uppercase;
+        font-family: 'Barlow';
+        box-sizing: border-box;
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+    a:hover {
+        text-decoration:underline;
+    }
+    .line {
+        width: 437px;
+        height: 1px;
+        background-color: #979797; 
+        position: absolute;
+        top: 9.5vh;
+        left: 17vw;
+    }
+    .section {
+        display: flex;
+        flex-direction: column;
+        text-align: start
+    }
+    .section__h2 {
+        margin-left: 220px;
+        font-size: 1.5em;
+    }
+    .section__div-img{
+        width: 570px;
+        height: 712px;
+        position: absolute;
+        bottom: -50px;
+        left: 650px;
+    }
+    .section__div-img > img {
+        width: auto;
+        height: auto;
+    }
+    .section__div-img__div-circles{
+        position: absolute;
+        bottom: 140px;
+        left: -560px;
+        width: 132px;
+    }
+    .circle-1, .circle-2, .circle-3, .circle-4 {
+        width: 15px;
+        height: 15px;
+    }
+    .section__div-info__h2, .section__div-info__name, .section__div-info__paragraph {
+        position: relative;
+        left: 220px;
+        margin-left: 0;
+    }
+    .section__div-info__h2 {
+        font-size: 2em;
+    }
+    .section__div-info__name{
+        font-size: 3.2em;
+    }
+    .section__div-info__paragraph{
+        font-size: 1.1em;
+        width: 444px;
+    }
+
+    
+}
